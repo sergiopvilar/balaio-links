@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+
+html {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(Doubs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main div {
+  margin-bottom: 2rem;
+  width: 30vw;
+}
+
+main .profile img {
+  width: 40%;
+}
+
+main .profile {
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a div {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  min-height: 36px;
+}
+
+a div p {
+  color: black;
+}
+
+a div:hover p {
+  color: black;
+}
+
+a div img {
+  width: 2rem;
+}
+
+a div p {
+  display: inline;
+  color: black;
+  text-align: center;
+  position: relative;
+  top: 9px;
+}
+
+a div:active {
+  transform: translate(10px, 10px);
+  box-shadow: 0px 0px rgb(183, 124, 238);
+}
+
+@media (max-width: 900px) {
+  main {
+    width: 80%;
+    padding: 1.5rem;
+    box-shadow: none;
+  }
+
+  main:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  main .profile h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  main .profile img {
+    width: 60%;
+  }
+
+  main .profile img:hover {
+    transform: none;
+    box-shadow: 10px 6px rgba(97, 126, 240, 0.671);
+  }
+
+  main div {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 400px) {
+  main a div p span {
+    display: none;
+  }
+}
